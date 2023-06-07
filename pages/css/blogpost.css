@@ -341,3 +341,11 @@ p {
   text-decoration: none;
   color: white;
 }
+
+
+@media (max-width: 768px) {
+
+  header .d-flex button {
+    top: 232px;
+  }
+}
