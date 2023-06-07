@@ -745,6 +745,24 @@ p {
     font-size: 25px;
     line-height: 35px;
   }
+  header .d-flex button {
+    top: 232px;
+  }
+  .instructors h3.instructors_title::before{
+    top: 110px;
+  }
+  
+  .instructors h3.instructors_title::after{
+    top: 120px;
+  }
+
+  .feedback h3.feedback_title::before{
+    top: 110px;
+  }
+  
+  .feedback h3.feedback_title::after{
+    top: 120px;
+  }
 } 
 
 
