@@ -45,6 +45,11 @@ header .navbar-nav .nav-link.active {
   color: #ff6e65;
 }
 
+.dropdown-menu .dropdown-item.active {
+  color: #ff6e65;
+  background: transparent;
+}
+
 .header_nav .dropdown-item {
   transition: all 0.5s;
 }
