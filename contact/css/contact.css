@@ -352,18 +352,20 @@ p {
   color: white;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 786px) {
 
   header .d-flex button {
     top: 232px;
   }
   .question h3.question_title::before{
-    top: 110px;
+    top: 100px;
   }
   
   .question h3.question_title::after{
-    top: 120px;
+    top: 110px;
   }
-
 } 
+
+
 
