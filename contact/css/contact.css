@@ -352,7 +352,8 @@ p {
   color: white;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 786px) {
 
   header .d-flex button {
     top: 232px;
@@ -364,21 +365,7 @@ p {
   .question h3.question_title::after{
     top: 110px;
   }
-
 } 
 
-@media (max-width: 576px) {
 
-  header .d-flex button {
-    top: 232px;
-  }
 
-  .question h3.question_title::before{
-    top: 150px;
-  }
-  
-  .question h3.question_title::after{
-    top: 160px;
-  }
-
-} 
