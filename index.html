@@ -11,7 +11,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-  <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 
   <!-- font Montserrat  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,140 +31,418 @@
 </head>
 
 <body>
-    <!-- header  -->
-    <header class="fixed-top">
-      <!-- navigation  -->
-      <nav class="navbar navbar-expand-lg bg-white header_nav">
-        <div class="container-fluid">
-          <div class="header_logo">
-            <a class="navbar-brand d-flex align-items-center" href="#"><img src="../img/logo.png" alt="logo"> <span
-                class="ms-1">Studious</span>
-            </a>
-          </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse " id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto ">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#">ABOUT US</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  PAGES
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="../pages/blogpost.html">BLOG POSTS</a></li>
-                  <li><a class="dropdown-item" href="../pages/404page.html">404 PAGE</a></li>
-                  <li><a class="dropdown-item" href="../pages/landingpage.html">LANDING PAGE</a></li>
-                  <li><a class="dropdown-item" href="#">ELEMENTS PAGE</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../contact/contact.html">CONTACT</a>
-              </li>
-            </ul>
-            <div class="header_search ms-4">
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn" type="submit"><i class="fa fa-search"
-                    aria-hidden="true"></i></button>
-              </form>
-            </div>
+  <!-- header  -->
+  <header class="fixed-top">
+    <!-- navigation  -->
+    <nav class="navbar navbar-expand-lg bg-white header_nav">
+      <div class="container-fluid">
+        <div class="header_logo">
+          <a class="navbar-brand d-flex align-items-center" href="#"><img src="./img/logo.png" alt="logo">
+            <span class="ms-1">Studious</span>
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./about_us/aboutus.html">ABOUT US</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                PAGES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="./pages/blogpost.html">BLOG POSTS</a></li>
+                <li><a class="dropdown-item" href="./pages/404page.html">404 PAGE</a></li>
+                <li><a class="dropdown-item " href="./pages/landingpage.html">LANDING PAGE</a>
+                </li>
+                <li><a class="dropdown-item" href="#">ELEMENTS PAGE</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact/contact.html">CONTACT</a>
+            </li>
+          </ul>
+          <div class="header_search ms-4">
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
           </div>
         </div>
-      </nav>
       </div>
-    </header>
+    </nav>
+    </div>
+  </header>
 
   <!-- banner  -->
   <section class="banner">
-    <div class="container">
-      <div class="banner_title text-white">
-        <h4 class="fw-bold mb-sm-3 mb-2">Contact Us</h4>
-        <a class="text-white" href="#">Home</a>
-        &nbsp;&nbsp;»&nbsp;&nbsp;Contact page
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+          class="active banner_slide" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" class="banner_slide" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner ">
+        <div class="carousel-item active">
+          <img src="../img/banner2.jpg" class="d-block w-100" alt="...">
+          <div class="container">
+            <div class="row">
+              <div class="banner_title col-sm-12 col-xl-4">
+                <h5>Master the Skills to Drive your Career</h5>
+                <a class="btn btn-style mt-sm-2 mt-4" href="about">
+                  Know More <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/banner3.jpg" class="d-block w-100" alt="...">
+          <div class="container">
+            <div class="row">
+              <div class="banner_title col-sm-4 col-xl-4">
+                <h5>Studious is the best choice for everyone </h5>
+                <a class="btn btn-style mt-sm-2 mt-4" href="about">
+                  Know More <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev visually-hidden" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next visually-hidden" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
+  </section>
+
+  <!-- column  -->
+  <div class="column ">
+    <div class="container">
+      <div class="column_content pb-5 row">
+        <div class="column_item col-sm-12 col-lg-6  col-xl-3 pb-sm-3 pb-xs-2 ">
+          <div class="column_eng">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+            <a href="#url" class="title-head">Engineering &amp; Architecture</a>
+          </div>
+        </div>
+        <div class="column_item col-sm-12 col-lg-6 col-xl-3 pb-sm-3">
+          <div class="column_lea ">
+            <i class="fa fa-book" aria-hidden="true"></i>
+            <a href="#url" class="title-head">Learning Management</a>
+          </div>
+        </div>
+        <div class="column_item col-sm-12  col-lg-6 col-xl-3 pb-sm-3">
+          <div class="column_bus ">
+            <i class="fa fa-coffee" aria-hidden="true"></i>
+            <a href="#url" class="title-head">Business &amp; Management</a>
+          </div>
+        </div>
+        <div class="column_item col-sm-12 col-lg-6 col-xl-3 pb-sm-3">
+          <div class="column_art">
+            <i class="fa fa-hourglass-half" aria-hidden="true"></i>
+            <a href="#url" class="title-head">Artificial Intelligence</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- studious  -->
+  <section class="studious py-5">
+    <div class="container">
+      <div class="studious_post">
+        <h3 class="studious_title text-center mb-5 pb-sm-4">Welcome to <span>Studious</span> </h3>
+        <div class="studious_content row mx-4">
+          <div class="studious_item col-sm-12 col-xl-4">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <a href="#">Trending Courses</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+          </div>
+          <div class="studious_item col-xl-4">
+            <i class="fa-solid fa-users"></i>
+            <a href="#">Certified Teachers</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+          </div>
+          <div class="studious_item col-xl-4">
+            <i class="fa-solid fa-book"></i>
+            <a href="#">Books &amp; Library</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- services  -->
+  <section class="services my-5">
+    <div class="container">
+      <div class="services_content py-5 ">
+        <div class="row py-5">
+          <div class=" col-xl-3"></div>
+          <div class="services_item d-flex col-xl-4 mt-4">
+            <div class="icon">
+              <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>
+            </div>
+            <div class="test">
+              <h5>Flexible Classes</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+          <div class="services_item d-flex col-xl-4 mt-4">
+            <div class="icon">
+              <i class="fa fa-download" aria-hidden="true"></i>
+            </div>
+            <div class="test">
+              <h5>Flexible Classes</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+          <div class="col-xl-3">
+          </div>
+          <div class="services_item d-flex col-xl-4 mt-4">
+            <div class="icon">
+              <i class="fa fa-headphones" aria-hidden="true"></i>
+            </div>
+            <div class="test">
+              <h5>Flexible Classes</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+          <div class="services_item d-flex col-xl-4 mt-4">
+            <div class="icon">
+              <i class="fa fa-play-circle" aria-hidden="true"></i>
+            </div>
+            <div class="test">
+              <h5>Flexible Classes</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- number  -->
+  <section class="number py-5">
+    <div class="container">
+      <div class="number_post text-center mb-5 pb-sm-4">
+        <h3 class="number_title mb-5 pb-sm-4">Strength in<span> Number</span> </h3>
+        <p class="text_number">Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
+          dolorum fuga.</p>
+      </div>
+      <div class="number_content row mx-4">
+        <div class="number_item col-sm-12 col-xl-3">
+          <h3 class="counter">6,300</h3>
+          <p>LEARNERS & COUNTING</p>
+        </div>
+        <div class="number_item col-sm-12 col-xl-3">
+          <h3 class="counter">638</h3>
+          <p>TOTAL COURSES</p>
+        </div>
+        <div class="number_item col-sm-12 col-xl-3">
+          <h3 class="counter">7,600</h3>
+          <p>SUCCESSFUL STUDENTS</p>
+        </div>
+        <div class="number_item col-sm-12 col-xl-3">
+          <h3 class="counter">36</h3>
+          <p>LANGUAGES</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- feedback  -->
+  <section class="feedback py-5">
+    <div class="container">
+      <div class="feedback_post text-center mb-5 pb-sm-4">
+        <h3 class="feedback_title mb-5 pb-sm-4">Student Community<span> Feedback</span> </h3>
+      </div>
+      <div class="feedback_content row g-3">
+        <div class="feedback_item col-xl-4 px-3">
+          <div class="item_col ">
+            <span class="fa fa-quote-left"></span>
+            <p class="sub_test">
+              Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit.
+            </p>
+            <div class="sub_img d-flex">
+              <div class="img_left">
+                <img src="./img/testi2.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="text_left">
+                <h5>
+                  Petey Cruis </h5>
+                <p>
+                  Caption Here </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback_item col-xl-4 px-3">
+          <div class="item_col ">
+            <span class="fa fa-quote-left"></span>
+            <p class="sub_test">
+              Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit.
+            </p>
+            <div class="sub_img d-flex">
+              <div class="img_left">
+                <img src="./img/testi1.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="text_left">
+                <h5>
+                  Petey Cruis </h5>
+                <p>
+                  Caption Here </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback_item col-xl-4 px-3">
+          <div class="item_col ">
+            <span class="fa fa-quote-left"></span>
+            <p class="sub_test">
+              Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit. </p>
+            <div class="sub_img d-flex">
+              <div class="img_left">
+                <img src="./img/testi3.jpg" alt="" class="img-fluid">
+              </div>
+              <div class=" text_left">
+                <h5>
+                  Petey Cruis </h5>
+                <p>
+                  Caption Here </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  </section>
+
+  <!-- instructors  -->
+  <section class="instructors py-5">
+    <div class="container">
+      <div class="instructors_post text-center mb-5 pb-sm-4">
+        <h3 class="instructors_title mb-5 pb-sm-4">World Class<span> instructors</span> </h3>
+      </div>
+      <div class="instructors_content row g-4">
+        <div class="instructors_col col-sm-12 col-xl-3">
+          <div class="instructors_item ">
+            <div class="item_col ">
+              <img src="./img/team1.jpg" alt="">
+              <div class="sub_icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google-plus-g"></i>
+              </div>
+            </div>
+            <div class="instructors_text p-4">
+              <h3>Olive Yew</h3>
+              <p>Teaches Design</p>
+            </div>
+          </div>
+        </div>
+        <div class="instructors_col col-sm-12 col-xl-3">
+          <div class="instructors_item ">
+            <div class="item_col ">
+              <img src="./img/team2.jpg" alt="">
+              <div class="sub_icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google-plus-g"></i>
+              </div>
+            </div>
+            <div class="instructors_text p-4">
+              <h3>Olive Yew</h3>
+              <p>Teaches Design</p>
+            </div>
+          </div>
+        </div>
+        <div class="instructors_col col-sm-12 col-xl-3">
+          <div class="instructors_item ">
+            <div class="item_col ">
+              <img src="./img/team3.jpg" alt="">
+              <div class="sub_icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google-plus-g"></i>
+              </div>
+            </div>
+            <div class="instructors_text p-4">
+              <h3>Olive Yew</h3>
+              <p>Teaches Design</p>
+            </div>
+          </div>
+        </div>
+        <div class="instructors_col col-sm-12 col-xl-3">
+          <div class="instructors_item ">
+            <div class="item_col ">
+              <img src="./img/team4.jpg" alt="">
+              <div class="sub_icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google-plus-g"></i>
+              </div>
+            </div>
+            <div class="instructors_text p-4">
+              <h3>Olive Yew</h3>
+              <p>Teaches Design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
   </section>
 
   <!-- contact  -->
   <section class="contact py-5">
-    <div class="container py-md-5 py-4 mb-5 ">
-      <div class="mx-auto row" style="max-width:1000px">
-        <div class="contact-left col-xs-12 col-xl-5">
-          <div class="contact-title ">
-            <h3 class="fw-bold mb-md-5 mb-4">
-              Get in touch with us
-            </h3>
-          </div>
-          <div class="contact-details">
-            <div class="contact-item d-flex mt-4">
-              <div class="item-left me-3">
-                <span class="fa fa-globe "></span>
-              </div>
-              <div class="item-right">
-                <h6>
-                  Company Address
-                </h6>
-                <p>
-                  10001, 5th Avenue, 12202 street, London.
-                </p>
-              </div>
-            </div>
-            <div class="contact-item d-flex mt-4">
-              <div class="item-left me-3">
-                <span class="fa fa-phone"></span>
-              </div>
-              <div class="item-right">
-                <h6>
-                  Call Us
-                </h6>
-                <p>
-                  <a href="tel:+1(21) 234 4567">+1(21) 234 4567</a>
-                </p>
-              </div>
-            </div>
-            <div class="contact-item d-flex mt-4">
-              <div class="item-left me-3">
-                <span class="fa fa-envelope-open"></span>
-              </div>
-              <div class="item-right">
-                <h6>
-                  Email Us
-                </h6>
-                <p>
-                  <a href="mailto:example@mail.com" class="mail">example@mail.com</a>
-                </p>
-              </div>
-            </div>
-            <div class="contact-item d-flex mt-4">
-              <div class="item-left me-3">
-                <span class="fa fa-headphones"></span>
-              </div>
-              <div class="item-right">
-                <h6>
-                  Customer Support
-                </h6>
-                <p>
-                  <a href="mailto:info@support.com" class="mail">info@support.com</a>
-                </p>
-              </div>
-            </div>
-
+    <div class="container py-5">
+      <div class="contact_content row align-items-center">
+        <div class="col-sm-12 col-xl-5">
+          <div class="contact_left">
+            <img src="./img/image.png" alt="contact" srcset="">
           </div>
         </div>
-
-        <div class="contact-right col-xs-12 col-xl-7 mt-4">
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2spl!4v1562654563739!5m2!1sen!2spl"
-              width="100%" height="450" frameborder="0" allowfullscreen=""></iframe>
+        <div class="col-sm-12 col-xl-7 pt-sm-4">
+          <div class="contact_right">
+            <div class="contact_title">
+              <h3 class="mb-sb-3 mb-3">Not Sure Where to Begin?
+                Contact Now, We will Help you</h3>
+              <p>Consectetur adipiscing elit. Aliquam sit amet efficitur tortor.Uspendisse efficitur orci urna. In et
+                augue ornare, tempor massa in, luctus sapien.</p>
+            </div>
+            <div class="mt-4">
+              <a href="./contact/contact.html"><button class="btn contact_but">Contact Us</button></a>
+            </div>
           </div>
         </div>
       </div>
@@ -172,132 +450,104 @@
 
   </section>
 
-  <!-- questions  -->
-  <section class="question py-5 mt-md-5">
-    <div class="container mx-auto mb-5 py-5">
-      <div class="mx-auto row">
-        <h3 class="question_title text-center">
-          We will Answer all your
-          <span>Questions</span>
-        </h3>
-          <div class="question_item col-xs-12 col-xl-5 ">
-            <div class="question_left">
-              <img src="../img/contact.jpg" alt="contact" class="question_img">
+  <!-- footer  -->
+  <footer class="position-relative mt-5 pt-5">
+    <div class="footer_content">
+      <div class="container pt-5">
+        <div class="footer_top row">
+          <div class="top_right col-xs-12 col-xl-6 w-50">
+            <h1>Subscribe Us to join our Community</h1>
+            <p>Newsletter</p>
+          </div>
+          <div class="top_left col-xs-12 col-xl-6 d-flex">
+            <input class="" type="text" placeholder="Enter your email">
+            <button class="btn btn-primary text-white fw-bold">Send</button>
+          </div>
+        </div>
+
+        <div class="footer_bot row">
+          <div class="right_item col-xs-12 col-xl-3 ">
+            <h3>ARCHIVES</h3>
+            <a href="#">
+              <i class="fa-solid fa-angles-right"></i>
+              <span>April 2021</span>
+            </a>
+          </div>
+          <div class="right_item col-xs-12 col-xl-3">
+            <h3>CATEGORIES</h3>
+            <a href="#">
+              <i class="fa-solid fa-angles-right"></i>
+              <span>Bussiness</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-angles-right"></i>
+              <span>Creative</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-angles-right"></i>
+              <span>Design</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-angles-right"></i>
+              <span>Food</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-angles-right"></i>
+              <span>Industry</span>
+            </a>
+          </div>
+          <div class="right_item col-xs-12 col-xl-3">
+            <h3>CONTACT</h3>
+            <div class="item-infor">
+              <a href="mailto:datcuongha@gmail.com">
+                <i class="fa-regular fa-envelope"></i>
+                <span>info@example.com</span>
+              </a>
+              <a href="tel:0903158168">
+                <i class="fa-solid fa-phone"></i>
+                <span>+44-000-888-999</span>
+              </a>
+              <p class="address">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>London, 235 Terry, 10001</span>
+              </p>
             </div>
-          </div> 
-            <div class="question_right col-xs-12 col-xl-6 ps-xl-4 ">
-              <form action="">
-                <input type="text" placeholder="Your Name*" class="question_input w-100">
-                <input type="text" placeholder="Your Email*" class="question_input w-100">
-                <input type="text" placeholder="Subject*" class="question_input w-100">
-                <textarea class="question_input w-100" name="" id="" cols="30" rows="10" placeholder="Type your message here*"
-                  style="height: 120px;"></textarea>
-              </form>
-              <button class="btn btn-secondary mt-4 ">Send Message</button>
-            </div>
+          </div>
+          <div class="right_item right-border col-xs-12 col-xl-3">
+            <h3>ABOUT</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+              laudantium, totam
+              rem
+              aperiam, eaque ipsa quae ab.</p>
+            <ul class=" d-flex">
+              <li><a href="">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a></li>
+              <li><a href="">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a></li>
+              <li><a href="">
+                  <i class="fa-brands fa-twitter"></i>
+                </a></li>
+              <li><a href="">
+                  <i class="fa-brands fa-google-plus-g"></i>
+                </a></li>
+              <li><a href="">
+                  <i class="fa-brands fa-github"></i>
+                </a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
- <!-- footer  -->
- <footer class="position-relative mt-5 pt-5">
-  <div class="footer_content">
-    <div class="container pt-5">
-      <div class="footer_top row">
-        <div class="top_right col-xs-12 col-xl-6 w-50">
-          <h1>Subscribe Us to join our Community</h1>
-          <p>Newsletter</p>
-        </div>
-        <div class="top_left col-xs-12 col-xl-6 d-flex">
-          <input class="" type="text" placeholder="Enter your email">
-          <button class="btn btn-primary text-white fw-bold">Send</button>
-        </div>
-      </div>
-
-      <div class="footer_bot row">
-        <div class="right_item col-xs-12 col-xl-3 ">
-          <h3>ARCHIVES</h3>
-          <a href="#">
-            <i class="fa-solid fa-angles-right"></i>
-            <span>April 2021</span>
-          </a>
-        </div>
-        <div class="right_item col-xs-12 col-xl-3">
-          <h3>CATEGORIES</h3>
-          <a href="#">
-            <i class="fa-solid fa-angles-right"></i>
-            <span>Bussiness</span>
-          </a>
-          <a href="#">
-            <i class="fa-solid fa-angles-right"></i>
-            <span>Creative</span>
-          </a>
-          <a href="#">
-            <i class="fa-solid fa-angles-right"></i>
-            <span>Design</span>
-          </a>
-          <a href="#">
-            <i class="fa-solid fa-angles-right"></i>
-            <span>Food</span>
-          </a>
-          <a href="#">
-            <i class="fa-solid fa-angles-right"></i>
-            <span>Industry</span>
-          </a>
-        </div>
-        <div class="right_item col-xs-12 col-xl-3">
-          <h3>CONTACT</h3>
-          <div class="item-infor">
-            <a href="mailto:datcuongha@gmail.com">
-              <i class="fa-regular fa-envelope"></i>
-              <span>info@example.com</span>
-            </a>
-            <a href="tel:0903158168">
-              <i class="fa-solid fa-phone"></i>
-              <span>+44-000-888-999</span>
-            </a>
-            <p class="address">
-              <i class="fa-solid fa-location-dot"></i>
-              <span>London, 235 Terry, 10001</span>
-            </p>
-          </div>
-        </div>
-        <div class="right_item right-border col-xs-12 col-xl-3">
-          <h3>ABOUT</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-            rem
-            aperiam, eaque ipsa quae ab.</p>
-          <ul class=" d-flex">
-            <li><a href="">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a></li>
-            <li><a href="">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a></li>
-            <li><a href="">
-                <i class="fa-brands fa-twitter"></i>
-              </a></li>
-            <li><a href="">
-                <i class="fa-brands fa-google-plus-g"></i>
-              </a></li>
-            <li><a href="">
-                <i class="fa-brands fa-github"></i>
-              </a></li>
-          </ul>
-        </div>
+      <div class="copyright text-center py-3">
+        <p>
+          © 2023 Studious. All Rights Reserved | WordPress Theme by
+          <a href="">W3Layouts.</a>
+        </p>
       </div>
     </div>
-    <div class="copyright text-center py-3">
-      <p>
-        © 2023 Studious. All Rights Reserved | WordPress Theme by
-        <a href="">W3Layouts.</a>
-      </p>
-    </div>
-  </div>
 
-</footer>
+  </footer>
 
 
   <!-- <div class="row">
@@ -319,6 +569,21 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
+
+  <!-- count up js  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/jquery.countup.js"></script>
+  <script>
+    $('.counter').countUp({
+      'time': 2000,
+      'delay': 10
+    });
+  </script>
 </body>
 
 </html>
