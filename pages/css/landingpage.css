@@ -11,14 +11,6 @@ body {
   font-size: 16px;
 }
 
-header .navbar-nav .nav-link.active {
-  color: #ff6e65;
-}
-
-.dropdown-menu .dropdown-item.active {
-  color: #ff6e65;
-  background: transparent;
-}
 
 .header_nav a span {
   color: #0d369f;
@@ -50,6 +42,14 @@ header .navbar-nav .nav-link.active {
   color: #ff6e65;
 }
 
+header .navbar-nav .nav-link.active {
+  color: #ff6e65;
+}
+
+.dropdown-menu .dropdown-item.active {
+  color: #ff6e65;
+  background: transparent;
+}
 
 .header_nav .dropdown-item {
   transition: all 0.5s;
@@ -765,6 +765,46 @@ p {
   }
 } 
 
+@media only screen and (max-width: 570px) {
+  .banner .banner_title h5 {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  header .d-flex button {
+    top: 2px;
+  }
 
+.column .column_eng, .column .column_lea, .column .column_bus, .column .column_art {
+    padding: 25px 20px;
+    font-size: 20px;
+  }
+  .column .column_item {
+    padding-bottom: 8px;
+  }  
+
+  .feedback h3.feedback_title::before{
+    top: 150px;
+  }
+  
+  .feedback h3.feedback_title::after{
+    top: 160px;
+  }
+
+  .studious h3.studious_title::before{
+    top: 100px;
+  }
+  
+  .studious h3.studious_title::after{
+    top: 110px;
+  }
+
+  .number h3.number_title::before{
+    top: 100px;
+  }
+  
+  .number h3.number_title::after{
+    top: 110px;
+  }
+}
 
 

@@ -129,6 +129,7 @@ header .header_search .d-flex button {
 
 .column .column_item{
     text-align: center;
+    
 
 }
 
@@ -757,6 +758,7 @@ p {
   header .d-flex button {
     top: 232px;
   }
+
   .instructors h3.instructors_title::before{
     top: 110px;
   }
@@ -772,8 +774,46 @@ p {
   .feedback h3.feedback_title::after{
     top: 120px;
   }
+
 } 
 
+@media only screen and (max-width: 570px) {
+  .banner .banner_title h5 {
+    font-size: 15px;
+    line-height: 15px;
+  }
 
+.column .column_eng, .column .column_lea, .column .column_bus, .column .column_art {
+    padding: 25px 20px;
+    font-size: 20px;
+  }
+  .column .column_item {
+    padding-bottom: 8px;
+  }  
+
+  .feedback h3.feedback_title::before{
+    top: 150px;
+  }
+  
+  .feedback h3.feedback_title::after{
+    top: 160px;
+  }
+
+  .studious h3.studious_title::before{
+    top: 100px;
+  }
+  
+  .studious h3.studious_title::after{
+    top: 110px;
+  }
+
+  .number h3.number_title::before{
+    top: 100px;
+  }
+  
+  .number h3.number_title::after{
+    top: 110px;
+  }
+}
 
 
