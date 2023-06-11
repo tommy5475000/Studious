@@ -782,9 +782,6 @@ p {
     font-size: 15px;
     line-height: 15px;
   }
-  header .d-flex button {
-    top: 2px;
-  }
 
 .column .column_eng, .column .column_lea, .column .column_bus, .column .column_art {
     padding: 25px 20px;
